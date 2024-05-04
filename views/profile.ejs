@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pintrest | Profile</title>
+    <link rel="stylesheet" href="/stylesheets/profile.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div id="algn">
+      <div id="cardpers">
+        <div id="upper-bg">
+          <img
+            src="https://nasemul1.github.io/my-portfolio/profile-pic.png"
+            alt="profile-pic"
+            class="profile-pic"
+          />
+        </div>
+        <div id="lower-bg">
+          <div class="text">
+            <p class="name"><b>Name: </b><%= user.fullname%></p>
+            <p class="title"><b>Username: </b><%= user.username %></p>
+            <p class="title"><b>Email: </b><%= user.email %></p>
+          </div>
+          <a href="/uploads" class="btnpers">Upload Image</a>
+          <a href="/logout" class="btnpers">Logout</a>
+          <a href="/feed" class="btnpers">Show Feeds</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="cards flex">
+        <% user.posts.forEach(function(post){ %>
+        <div class="card" style="width: 18rem">
+          <img
+            src="images/uploads/<%= post.image %>"
+            class="card-img-top"
+            alt="post"
+          />
+          <div class="card-body">
+            <h5 class="card-title"><%= post.posttext %></h5>
+            <a href="/delete/<%= post._id %>" class="danger">Delete</a>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

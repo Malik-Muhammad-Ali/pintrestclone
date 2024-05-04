@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#algn {
+  height: 92vh;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cardpers {
+  width: 370px;
+  height: 435px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 #e7e9eb, 0 6px 20px 0 #e7e9eb;
+}
+
+#upper-bg {
+  width: 100%;
+  height: 35%;
+  background-color: #ffe400;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.profile-pic {
+  width: 35%;
+  background-color: white;
+  border: 3px solid #ffe400;
+  border-radius: 50%;
+  padding: 3px;
+  position: absolute;
+  top: 40px;
+}
+
+#lower-bg {
+  width: 100%;
+  height: 65%;
+}
+
+.text {
+  text-align: center;
+  padding-top: 35px;
+}
+
+.text .name {
+  font-weight: 600;
+  font-size: large;
+  padding: 0;
+  margin: 5px;
+}
+
+.text .title {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+#icons img {
+  width: 80%;
+  height: 90%;
+}
+
+.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+#btn button {
+  margin: 0 20px;
+  padding: 10px 15px;
+  background-color: #ffe400;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+#btn button:hover {
+  box-shadow: 0 4px 8px 0 #e7e9eb, 0 6px 20px 0 #e7e9eb;
+}
+
+#l-c-s {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+#l-c-s .num {
+  display: flex;
+}
+
+#l-c-s .dvr {
+  width: 2px;
+  height: 25px;
+  background-color: gray;
+}
+
+#l-c-s img {
+  width: 24px;
+  height: 24px;
+}
+
+.license {
+  font-size: 12px;
+  text-align: center;
+}
+
+.license .ll {
+  padding: 0 10px;
+  display: inline;
+}
+
+.btnpers{
+    width: 100%;
+    height: 40px;
+    border: hidden;
+    font-size: 18px;
+    margin: 5px 0px;
+    background-color: #ffe400;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnpers:hover{
+    background-color: #f9d835;
+    text-decoration: none;
+    color: black;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: start;
+}
+.danger{
+  outline: none;
+  border: none;
+  background-color: #ff0000;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+}

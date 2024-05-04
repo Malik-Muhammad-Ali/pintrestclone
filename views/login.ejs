@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pintrest | Login</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <!--pinterest logo-->
+        <img
+          src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png"
+          alt="pin logo"
+          class="img1"
+        />
+        <a class="header">Login to see more</a>
+
+        <!-- error -->
+        <% if(error.length>0){ %>
+          <p class="error"><%= error %></p>
+          <% } %>
+
+        <form action="/login" method="post">
+          <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            class="detail"
+          /><br />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            class="detail"
+          />
+          <input
+            type="submit"
+            value="Login"
+            class="btn int"
+          />
+        </form>
+
+        <a href="/forgot">Forgot your password?</a>
+
+        <footer>
+            <br>
+            <a href="/">Not on Pinterest? Register</a>
+          </footer>
+      </div>
+    </div>
+  </body>
+</html>

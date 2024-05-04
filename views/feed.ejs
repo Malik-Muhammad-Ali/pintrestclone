@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pintrest | Feed</title>
+    <link rel="stylesheet" href="/stylesheets/feed.css" />
+  </head>
+  <body>
+    <div class="container">
+      <% posts.forEach(function(post){ %>
+      <div class="column">
+        <div class="content-wrapper">
+          <div class="image-wrapper">
+            <div class="overlay">
+              <div>
+                <p>Creator: <%= post.user.username %></p>
+              </div>
+              <div></div>
+            </div>
+            <img src="images/uploads/<%= post.image %>" alt="" />
+          </div>
+          <p><%= post.posttext %></p>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </body>
+</html>

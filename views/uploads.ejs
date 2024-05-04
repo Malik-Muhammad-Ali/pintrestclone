@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pintrest | Login</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+
+        <form action="/upload" method="post" enctype="multipart/form-data">
+          <input
+            type="file"
+            name="file"
+            class="detail"
+            required
+          /><br />
+          <input
+            type="text"
+            name="posttext"
+            placeholder="Caption"
+            class="detail"
+            required
+          />
+          <input
+            type="submit"
+            value="Upload"
+            class="btn int"
+          />
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>
